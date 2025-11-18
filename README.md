@@ -66,23 +66,3 @@ FROM FactGLTran AS gl
 GO
 
 
-  
-</details>
-
-<details>
-   <summary>Key DAX Formula</summary>
-  <details>
-    <summary>Key DAX Formula</summary>
-  Income Statement = 
-VAR Display_Filter = NOT ISFILTERED(DimGLAccts[Subcategory])
-RETURN
-SWITCH(
-    TRUE(),
-    SELECTEDVALUE('DimHeaders'[MeasureName]) = "Subtotal" && Display_Filter, [I/S Subtotal],
-    SELECTEDVALUE('DimHeaders'[MeasureName]) = "Per_Of_Revenue" && Display_Filter, [% Revenue],
-    [I/S Amount]
-)
-  </details>
-  
-</details>
-
