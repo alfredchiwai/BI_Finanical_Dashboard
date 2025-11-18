@@ -2,7 +2,7 @@
 Key Techniques Used in this Financial Dashboard
 - Using Azure Data Studio and SQL code to take financial transactions data from public Adventure Database (prod-sql-cfieducation.database.windows.net)
 - Key SQL Code: INNER JOIN, CONVERT(), GETDATE(), CREATE VIEW. Create one table in Azure Data Studio only for the sake of one signle truth to avoid inconsistent updates across tables
-- Connect to the database using the Power Query Ediotr in Power BI
+- Connect to the database using the Power Query Editor in Power BI
 - Create Fact and Dimension Tables, including Date Dimension Table for Time Intelligence
 - Data Modelling in Power BI by buidling relationship between the data and tables
 - Create DAX measures including CALCULATE(), SELECTEDVALUE(), SWITCH(), FILTER(), ISFILTER()
